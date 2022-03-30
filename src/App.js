@@ -1,10 +1,15 @@
+import React from "react";
 import './App.css';
-import Navbar from "./header";
+import Navigation from "./components/Navbar";
+import Slider from "./components/Slider";
+import 'bootstrap/dist/css/bootstrap.min.css'
+import './main.scss'
 
 function App() {
   return (
     <div className="App">
-        <Navbar />
+        <Navigation />
+        <Slider />
         <h1 className="App-logo">Hello World</h1>
     </div>
   );

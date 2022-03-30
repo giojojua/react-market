@@ -6,13 +6,12 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './main.scss'
 
 function App() {
-  return (
-    <div className="App">
-        <Navigation />
-        <Slider />
-        <h1 className="App-logo">Hello World</h1>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navigation/>
+            <Slider/>
+        </div>
+    );
 }
 
 export default App;

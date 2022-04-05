@@ -3,13 +3,13 @@
     {
       "id": 1,
       "name": "Market Place",
-      "url": "/market-place",
+      "url": "/market",
       "position": 1
     },
     {
       "id": 2,
       "name": "About Us",
-      "url": "/about-us",
+      "url": "/about",
       "position": 3
     },
     {

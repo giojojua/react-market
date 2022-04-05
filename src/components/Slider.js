@@ -9,9 +9,12 @@ function Slider() {
                 <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
                     <div className="container d-flex align-items-center">
                         <div className="sliderText">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae nobis
-                            quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam reiciendis
-                            rerum soluta suscipit tempore.
+                            <h2>Lorem ipsum dolor <span className="text-yellow">sit amet</span>, consectetur adipisicing
+                                elit.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
+                                nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
+                                reiciendis rerum soluta suscipit tempore.</p>
+                            <a href="/" className="slider-btn">Go To Market</a>
                         </div>
                     </div>
                 </div>
@@ -20,9 +23,12 @@ function Slider() {
                 <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
                     <div className="container d-flex align-items-center">
                         <div className="sliderText">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae nobis
-                            quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam reiciendis
-                            rerum soluta suscipit tempore.
+                            <h2>Lorem ipsum dolor <span className="text-yellow">sit amet</span>, consectetur adipisicing
+                                elit.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
+                                nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
+                                reiciendis rerum soluta suscipit tempore.</p>
+                            <a href="/" className="slider-btn">Go To Market</a>
                         </div>
                     </div>
                 </div>
@@ -31,9 +37,12 @@ function Slider() {
                 <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
                     <div className="container d-flex align-items-center">
                         <div className="sliderText">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae nobis
-                            quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam reiciendis
-                            rerum soluta suscipit tempore.
+                            <h2>Lorem ipsum dolor <span className="text-yellow">sit amet</span>, consectetur adipisicing
+                                elit.</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
+                                nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
+                                reiciendis rerum soluta suscipit tempore.</p>
+                            <a href="/" className="slider-btn">Go To Market</a>
                         </div>
                     </div>
                 </div>

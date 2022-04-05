@@ -22,10 +22,8 @@ function Footer() {
                         <ul>
                             {
                                 pages.map(page => {
-                                        {
-                                            pages.sort((a, b) => a.position > b.position ? 1 : -1)
-                                            return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
-                                        }
+                                        pages.sort((a, b) => a.position > b.position ? 1 : -1)
+                                        return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
                                     }
                                 )
                             }
@@ -36,10 +34,8 @@ function Footer() {
                         <ul>
                             {
                                 pages.map(page => {
-                                        {
-                                            pages.sort((a, b) => a.position > b.position ? 1 : -1)
-                                            return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
-                                        }
+                                        pages.sort((a, b) => a.position > b.position ? 1 : -1)
+                                        return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
                                     }
                                 )
                             }
@@ -50,10 +46,8 @@ function Footer() {
                         <ul>
                             {
                                 pages.map(page => {
-                                        {
-                                            pages.sort((a, b) => a.position > b.position ? 1 : -1)
-                                            return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
-                                        }
+                                        pages.sort((a, b) => a.position > b.position ? 1 : -1)
+                                        return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
                                     }
                                 )
                             }
@@ -62,7 +56,9 @@ function Footer() {
                 </Row>
                 <Row className="copyright">
                     <Col>
-                        <p className="text-center">© Copyright 2022 <a href="/" className="text-white text-decoration-none">Market</a> All Rights Reserved.</p>
+                        <p className="text-center">© Copyright 2022 <a href="/"
+                                                                       className="text-white text-decoration-none">Market</a> All
+                            Rights Reserved.</p>
                     </Col>
                 </Row>
             </Container>

@@ -1,4 +1,6 @@
+import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap"
+import sitelogo from '../images/logo.png';
 
 function Navigation() {
     const pages = require('../data/data.json').pages
@@ -6,7 +8,10 @@ function Navigation() {
         <header>
             <Navbar variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand href="/">Home</Navbar.Brand>
+                    <Navbar.Brand className="d-flex align-items-end" href="/">
+                        <img className="pe-2" src={sitelogo} alt=""/>
+                        <span className="brand-color">Market</span>
+                    </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">

@@ -2,8 +2,8 @@
   "pages": [
     {
       "id": 1,
-      "name": "Product",
-      "url": "/product",
+      "name": "Market Place",
+      "url": "/market-place",
       "position": 1
     },
     {

@@ -1,23 +1,7 @@
 import { Container, Nav, Navbar } from "react-bootstrap"
 
 function Navigation() {
-    const pages = [
-        {
-            id: 1,
-            name: 'Product',
-            url: '/product'
-        },
-        {
-            id: 2,
-            name: 'About Us',
-            url: '/about-us'
-        },
-        {
-            id: 3,
-            name: 'Contact',
-            url: '/contact'
-        }
-    ]
+    const pages = require('../data/data.json').pages
     return (
         <header>
             <Navbar variant="dark" expand="lg">
@@ -28,7 +12,7 @@ function Navigation() {
                         <Nav className="ms-auto">
                                 {
                                     pages.map(page => {
-                                        console.log(page)
+                                        pages.sort((a, b) => a.position > b.position ? 1 : -1)
                                         return <Nav.Link key={page.id} href={page.url}>{page.name}</Nav.Link>
                                     })
                                 }

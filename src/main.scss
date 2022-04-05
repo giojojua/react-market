@@ -57,6 +57,19 @@ header {
   display: none;
 }
 
+footer {
+  background-color: #0b1126;
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
 @media (max-width: 991px) {
   .navbar-collapse {
     position: absolute;

@@ -1,9 +1,12 @@
 import React from "react";
+import {Container} from "react-bootstrap";
 
 export default function Market() {
     return (
         <section>
-            <p>Market Content</p>
+            <Container>
+                <p>Market Content</p>
+            </Container>
         </section>
     )
 };

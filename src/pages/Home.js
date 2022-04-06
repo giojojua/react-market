@@ -1,11 +1,14 @@
 import React from "react";
 import Slider from "../components/Slider";
+import {Container} from "react-bootstrap";
 
 export default function Home() {
     return (
         <section>
             <Slider/>
-            <p>Home Content</p>
+            <Container>
+                <p>Home Content</p>
+            </Container>
         </section>
     )
 };

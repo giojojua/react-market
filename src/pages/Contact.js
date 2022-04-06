@@ -1,9 +1,12 @@
 import React from "react";
+import {Container} from "react-bootstrap";
 
 export default function Contact() {
     return (
         <section>
-            <p>Contact Content</p>
+            <Container>
+                <p>Contact Content</p>
+            </Container>
         </section>
     )
 };

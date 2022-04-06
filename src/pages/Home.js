@@ -1,13 +1,11 @@
 import React from "react";
 import Slider from "../components/Slider";
 
-function Home() {
+export default function Home() {
     return (
         <section>
-            <Slider />
-            <p>Home</p>
+            <Slider/>
+            <p>Home Content</p>
         </section>
     )
-}
-
-export default Home
+};

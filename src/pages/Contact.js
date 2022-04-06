@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function About() {
+export default function Contact() {
     return (
         <section>
-            <p>About Content</p>
+            <p>Contact Content</p>
         </section>
     )
 };

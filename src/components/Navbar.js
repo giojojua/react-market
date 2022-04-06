@@ -1,5 +1,6 @@
 import React from "react";
-import { Container, Nav, Navbar } from "react-bootstrap"
+import {Container, Nav, Navbar} from "react-bootstrap"
+import {Link} from "react-router-dom"
 import sitelogo from '../images/logo.png';
 
 function Navigation() {
@@ -12,15 +13,15 @@ function Navigation() {
                         <img className="pe-2" src={sitelogo} alt=""/>
                         <span className="brand-color">Market</span>
                     </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
-                                {
-                                    pages.map(page => {
-                                        pages.sort((a, b) => a.position > b.position ? 1 : -1)
-                                        return <Nav.Link key={page.id} href={page.url}>{page.name}</Nav.Link>
-                                    })
-                                }
+                            {
+                                pages.map(page => {
+                                    pages.sort((a, b) => a.position > b.position ? 1 : -1)
+                                    return <Link className="nav-link" key={page.id} to={page.url}>{page.name}</Link>
+                                })
+                            }
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

@@ -3,20 +3,20 @@
     {
       "id": 1,
       "name": "Market Place",
-      "url": "/market",
+      "url": "/pages/market",
       "position": 1
     },
     {
       "id": 2,
       "name": "About Us",
-      "url": "/about",
-      "position": 3
+      "url": "/pages/about",
+      "position": 2
     },
     {
       "id": 3,
       "name": "Contact",
-      "url": "/contact",
-      "position": 2
+      "url": "/pages/contact",
+      "position": 3
     }
   ]
 }

@@ -1,12 +1,14 @@
 import React from "react";
 import {Col, Row, Container} from "react-bootstrap"
 import sitelogo from '../images/logo.png';
+import Map from "./Maps";
 
 export default function Footer() {
     const pages = require('../data/data.json').pages
 
     return (
         <footer>
+            <Map/>
             <Container>
                 <Row className="py-5">
                     <Col>

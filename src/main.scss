@@ -1,3 +1,6 @@
+
+// default styles
+
 body {
   background-color: #03091f;
   color: #9fa4dd;
@@ -15,6 +18,60 @@ body {
     }
   }
 }
+
+.yellow-btn {
+  width: fit-content;
+  display: block;
+  margin-top: 10px;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background-color: #f4d805;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6164fe;
+  }
+}
+
+.text-yellow {
+  color: #f4d805;
+}
+
+.brand-color {
+  font-size: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #f4d805;
+}
+
+
+// scrollbar
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #222227;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #6164fe;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #6164fe;
+}
+
+
+// header & navba styles
 
 header {
   height: 100px;
@@ -39,17 +96,9 @@ header {
   color: #fff;
 }
 
-.text-yellow {
-  color: #f4d805;
-}
 
-.brand-color {
-  font-size: 30px;
-  font-family: "Inter", sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #f4d805;
-}
+// slider styles
+
 
 .sliderImage {
   display: flex;
@@ -67,17 +116,6 @@ header {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-
-  .slider-btn {
-    width: fit-content;
-    display: block;
-    margin-top: 10px;
-    border-radius: 5px;
-    padding: 15px 25px;
-    background-color: #f4d805;
-    color: #000;
-    text-decoration: none;
-  }
 }
 
 .carousel-control-prev, .carousel-control-next {
@@ -87,6 +125,20 @@ header {
 .carousel-indicators {
   display: none;
 }
+
+
+// services
+
+.card {
+  margin: auto;
+
+  .card-text {
+    text-align: center;
+  }
+}
+
+
+// footer styles
 
 footer {
   background-color: #0b1126;

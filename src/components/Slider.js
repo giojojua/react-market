@@ -1,10 +1,11 @@
 import {Carousel} from "react-bootstrap";
 import slider1 from '../images/slider1.jpg';
 import React from "react";
+import {Link} from "react-router-dom";
 
-function Slider() {
+export default function Slider() {
     return (
-        <Carousel>
+        <Carousel className="mb-4">
             <Carousel.Item>
                 <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
                     <div className="container d-flex align-items-center">
@@ -14,7 +15,7 @@ function Slider() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
                                 nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
                                 reiciendis rerum soluta suscipit tempore.</p>
-                            <a href="/" className="slider-btn">Go To Market</a>
+                            <Link className="yellow-btn" to="/pages/market">Go To Market</Link>
                         </div>
                     </div>
                 </div>
@@ -28,7 +29,7 @@ function Slider() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
                                 nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
                                 reiciendis rerum soluta suscipit tempore.</p>
-                            <a href="/" className="slider-btn">Go To Market</a>
+                            <Link className="yellow-btn" to="/pages/market">Go To Market</Link>
                         </div>
                     </div>
                 </div>
@@ -42,7 +43,7 @@ function Slider() {
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
                                 nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
                                 reiciendis rerum soluta suscipit tempore.</p>
-                            <a href="/" className="slider-btn">Go To Market</a>
+                            <Link className="yellow-btn" to="/pages/market">Go To Market</Link>
                         </div>
                     </div>
                 </div>
@@ -50,5 +51,3 @@ function Slider() {
         </Carousel>
     )
 }
-
-export default Slider

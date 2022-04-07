@@ -2,7 +2,7 @@ import React from "react";
 import {Col, Row, Container} from "react-bootstrap"
 import sitelogo from '../images/logo.png';
 
-function Footer() {
+export default function Footer() {
     const pages = require('../data/data.json').pages
 
     return (
@@ -65,5 +65,3 @@ function Footer() {
         </footer>
     )
 }
-
-export default Footer

@@ -3,15 +3,17 @@ import {Container, Nav, Navbar} from "react-bootstrap"
 import {Link} from "react-router-dom"
 import sitelogo from '../images/logo.png';
 
-function Navigation() {
+export default function Navigation() {
     const pages = require('../data/data.json').pages
     return (
         <header>
             <Navbar variant="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand className="d-flex align-items-end" href="/">
-                        <img className="pe-2" src={sitelogo} alt=""/>
-                        <span className="brand-color">Market</span>
+                    <Navbar.Brand>
+                        <Link className="d-flex align-items-end text-decoration-none" to="/">
+                            <img className="pe-2" src={sitelogo} alt=""/>
+                            <span className="brand-color">Market</span>
+                        </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>
                     <Navbar.Collapse id="basic-navbar-nav">
@@ -29,5 +31,3 @@ function Navigation() {
         </header>
     )
 }
-
-export default Navigation

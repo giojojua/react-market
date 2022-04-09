@@ -7,7 +7,7 @@ export default function Footer() {
     const pages = require('../data/data.json').pages
 
     return (
-        <footer>
+        <footer className="mt-5">
             <Map/>
             <Container>
                 <Row className="py-5">

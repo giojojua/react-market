@@ -5,7 +5,7 @@ import {HiCreditCard} from "react-icons/hi";
 import {MdDeliveryDining} from "react-icons/md";
 import {Link} from "react-router-dom";
 
-export default function Services() {
+export default function Services(props) {
     return (
         <Row className="py-5">
             <Col>
@@ -42,7 +42,7 @@ export default function Services() {
                 </Card>
             </Col>
             <Col xs={12}>
-                <Link to="/pages/market" className="yellow-btn mt-4 mx-auto">Go To Market</Link>
+                <Link to={props.btnSrc} className="yellow-btn mt-4 mx-auto">{props.btnPage}</Link>
             </Col>
         </Row>
     )

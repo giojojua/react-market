@@ -3,9 +3,9 @@ import {Col, Row , Card} from "react-bootstrap"
 import {RiCustomerService2Fill} from "react-icons/ri";
 import {HiCreditCard} from "react-icons/hi";
 import {MdDeliveryDining} from "react-icons/md";
-import {Link} from "react-router-dom";
+import BtnLink from "./BtnLink";
 
-export default function Services(props) {
+export default function Services() {
     return (
         <Row className="py-5">
             <Col>
@@ -42,7 +42,7 @@ export default function Services(props) {
                 </Card>
             </Col>
             <Col xs={12}>
-                <Link to={props.btnSrc} className="yellow-btn mt-4 mx-auto">{props.btnPage}</Link>
+                <BtnLink btnPage="Go To Market" btnSrc="/pages/market" margin="mx-auto"/>
             </Col>
         </Row>
     )

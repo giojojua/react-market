@@ -15,6 +15,7 @@ export default function Grid(props) {
             <Col>
                 <h2>{props.heading}</h2>
                 <p>{props.paragraph}</p>
+                {props.btnExist}
             </Col>
         </Row>
     )

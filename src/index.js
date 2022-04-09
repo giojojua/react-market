@@ -13,17 +13,19 @@ import Home from "./pages/Home";
 import Market from "./pages/Market";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Entry Point
 ReactDOM.render(
     <BrowserRouter>
+        <ScrollToTop/>
         <Routes>
-            <Route element={<App/>}>
-                <Route index element={<Home/>}/>
-                <Route path="pages/market" element={<Market/>}/>
-                <Route path="pages/about" element={<About/>}/>
-                <Route path="pages/contact" element={<Contact/>}/>
-            </Route>
+                <Route element={<App/>}>
+                    <Route index element={<Home/>}/>
+                    <Route path="pages/market" element={<Market/>}/>
+                    <Route path="pages/about" element={<About/>}/>
+                    <Route path="pages/contact" element={<Contact/>}/>
+                </Route>
         </Routes>
     </BrowserRouter>
     ,

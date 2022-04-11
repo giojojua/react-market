@@ -1,6 +1,8 @@
 import React from "react";
-import {Container} from "react-bootstrap";
+import {Col, Container, Row} from "react-bootstrap";
 import Intro from "../components/Intro";
+import Map from "../components/Maps";
+import ContactText from "../components/ContactText";
 
 export default function Contact() {
     return (
@@ -10,7 +12,14 @@ export default function Contact() {
                    currentPageName="Contact"
             />
             <Container>
-                <p>Contact Content</p>
+                <Row>
+                    <Col xs={12} md={5}>
+                        <ContactText/>
+                    </Col>
+                    <Col xs={12} md={7}>
+                        <Map/>
+                    </Col>
+                </Row>
             </Container>
         </section>
     )

@@ -31,12 +31,12 @@ export default function Services() {
                 </Card>
             </Col>
             <Col>
-                <Card bg="transparent" style={{ width: '18rem' }}>
+                <Card bg="transparent" style={{ width: '18rem'}}>
                     <MdDeliveryDining className="m-auto" color="#6164fe" size="60px"/>
                     <Card.Body>
-                        <Card.Title className="text-center text-white">24/7 Courier Service</Card.Title>
+                        <Card.Title className="text-center text-white">24/7 Service</Card.Title>
                         <Card.Text>
-                            Our Couriers will always deliver everything.
+                            Our Service is always open.
                         </Card.Text>
                     </Card.Body>
                 </Card>

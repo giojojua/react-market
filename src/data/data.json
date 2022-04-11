@@ -2,8 +2,8 @@
   "pages": [
     {
       "id": 1,
-      "name": "Market Place",
-      "url": "/pages/market",
+      "name": "Our Shop",
+      "url": "/pages/shop",
       "position": 1
     },
     {
@@ -23,14 +23,14 @@
     {
       "id": 1,
       "sliderImage": "../images/slider1.jpg",
-      "sliderTitle": "Buy with Bitcoins on our Market",
+      "sliderTitle": "Buy with Bitcoins on our Shop",
       "sliderText": "We are providing safest transactions with BitCoin",
       "position": 2
     },
     {
       "id": 2,
       "sliderImage": "../images/slider1.jpg",
-      "sliderTitle": "Our Market is growing and accessible to everyone",
+      "sliderTitle": "Our Shop is growing and accessible to everyone",
       "sliderText": "You can buy any item you want with us",
       "position": 1
     }

@@ -23,9 +23,9 @@ export default function Services() {
                 <Card bg="transparent" style={{ width: '18rem' }}>
                     <HiCreditCard className="m-auto" color="#6164fe" size="60px"/>
                     <Card.Body>
-                        <Card.Title className="text-center text-white">24/7 Market</Card.Title>
+                        <Card.Title className="text-center text-white">24/7 Shop</Card.Title>
                         <Card.Text>
-                            Our Market is always open for you.
+                            Our Shop is always open for you.
                         </Card.Text>
                     </Card.Body>
                 </Card>
@@ -42,7 +42,7 @@ export default function Services() {
                 </Card>
             </Col>
             <Col xs={12}>
-                <BtnLink btnPage="Go To Market" btnSrc="/pages/market" margin="mx-auto"/>
+                <BtnLink btnPage="Go To Shop" btnSrc="/pages/shop" margin="mx-auto"/>
             </Col>
         </Row>
     )

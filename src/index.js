@@ -10,7 +10,7 @@ import './main.scss'
 // My Components
 import App from "./App";
 import Home from "./pages/Home";
-import Market from "./pages/Market";
+import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
@@ -23,7 +23,7 @@ ReactDOM.render(
         <Routes>
                 <Route element={<App/>}>
                     <Route index element={<Home/>}/>
-                    <Route path="pages/market" element={<Market/>}/>
+                    <Route path="pages/shop" element={<Shop/>}/>
                     <Route path="pages/about" element={<About/>}/>
                     <Route path="pages/contact" element={<Contact/>}/>
                     <Route path='*' exact={true} element={<Error/>} />

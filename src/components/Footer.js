@@ -13,7 +13,7 @@ export default function Footer() {
                         <a className="text-decoration-none" href="/">
                             <div className="d-flex align-items-end">
                                 <img className="pe-2" src={sitelogo} alt=""/>
-                                <span className="brand-color">Market</span>
+                                <span className="brand-color">Shop</span>
                             </div>
                         </a>
                     </Col>
@@ -57,7 +57,7 @@ export default function Footer() {
                 <Row className="copyright">
                     <Col>
                         <p className="text-center">© Copyright 2022 <a href="/"
-                                                                       className="text-white text-decoration-none">Market</a> All
+                                                                       className="text-white text-decoration-none">Shop</a> All
                             Rights Reserved.</p>
                     </Col>
                 </Row>

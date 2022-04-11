@@ -14,7 +14,7 @@ export default function Navigation() {
                     <Navbar.Brand>
                         <Link className="d-flex align-items-end text-decoration-none" to="/">
                             <img className="pe-2" src={sitelogo} alt=""/>
-                            <span className="brand-color">Market</span>
+                            <span className="brand-color">Shop</span>
                         </Link>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav"/>

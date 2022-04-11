@@ -108,7 +108,7 @@ header {
 }
 
 .sliderText {
-  max-width: 600px;
+  max-width: 500px;
   width: fit-content;
   padding: 30px;
   background-color: #03091fc9;
@@ -165,9 +165,29 @@ header {
 footer {
   background-color: #0b1126;
 
-  h4 {
+  h5 {
     color: #fff;
     margin-top: 10px;
+    margin-bottom: 25px;
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      border-bottom: 3px solid #6164ff;
+      bottom: -14px;
+      left: 0;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      border-bottom: 3px solid #6164ff;
+      bottom: -14px;
+      left: 35px;
+    }
   }
 
   ul {

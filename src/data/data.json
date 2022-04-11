@@ -18,5 +18,21 @@
       "url": "/pages/contact",
       "position": 3
     }
+  ],
+  "slider": [
+    {
+      "id": 1,
+      "sliderImage": "../images/slider1.jpg",
+      "sliderTitle": "Buy with Bitcoins on our Market",
+      "sliderText": "We are providing safest transactions with BitCoin",
+      "position": 2
+    },
+    {
+      "id": 2,
+      "sliderImage": "../images/slider1.jpg",
+      "sliderTitle": "Our Market is growing and accessible to everyone",
+      "sliderText": "You can buy any item you want with us",
+      "position": 1
+    }
   ]
 }

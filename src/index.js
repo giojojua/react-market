@@ -14,6 +14,7 @@ import Market from "./pages/Market";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import Error from "./pages/Error";
 
 // Entry Point
 ReactDOM.render(
@@ -25,6 +26,7 @@ ReactDOM.render(
                     <Route path="pages/market" element={<Market/>}/>
                     <Route path="pages/about" element={<About/>}/>
                     <Route path="pages/contact" element={<Contact/>}/>
+                    <Route path='*' exact={true} element={<Error/>} />
                 </Route>
         </Routes>
     </BrowserRouter>

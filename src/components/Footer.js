@@ -18,7 +18,7 @@ export default function Footer() {
                         </a>
                     </Col>
                     <Col>
-                        <h4>Navigation</h4>
+                        <h5>Navigation</h5>
                         <ul>
                             {
                                 pages.map(page => {
@@ -30,7 +30,7 @@ export default function Footer() {
                         </ul>
                     </Col>
                     <Col>
-                        <h4>Navigation</h4>
+                        <h5>Navigation</h5>
                         <ul>
                             {
                                 pages.map(page => {
@@ -42,7 +42,7 @@ export default function Footer() {
                         </ul>
                     </Col>
                     <Col>
-                        <h4>Navigation</h4>
+                        <h5>Navigation</h5>
                         <ul>
                             {
                                 pages.map(page => {

@@ -1,53 +1,39 @@
-import {Carousel} from "react-bootstrap";
-import slider1 from '../images/slider1.jpg';
 import React from "react";
+import {Carousel} from "react-bootstrap";
 import {Link} from "react-router-dom";
 
 export default function Slider(props) {
+
+    const slider = require('../data/data.json').slider
+
+    function importAll(r) {
+        return r.keys().map(r);
+
+    }
+
+    const sliderImage = importAll(require.context('../images/slider/', false, /\.(png|jpe?g|svg)$/));
+
+    slider.sort((a, b) => a.position > b.position ? 1 : -1)
+
     return (
         <Carousel className="mb-4">
-            <Carousel.Item>
-                <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
-                    <div className="container d-flex align-items-center">
-                        <div className="sliderText">
-                            <h2>Lorem ipsum dolor <span className="text-yellow">sit amet</span>, consectetur adipisicing
-                                elit.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
-                                nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
-                                reiciendis rerum soluta suscipit tempore.</p>
-                            <Link className="yellow-btn" to="/pages/market">Go To Market</Link>
-                        </div>
-                    </div>
-                </div>
-            </Carousel.Item>
-            <Carousel.Item>
-                <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
-                    <div className="container d-flex align-items-center">
-                        <div className="sliderText">
-                            <h2>Lorem ipsum dolor <span className="text-yellow">sit amet</span>, consectetur adipisicing
-                                elit.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
-                                nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
-                                reiciendis rerum soluta suscipit tempore.</p>
-                            <Link className="yellow-btn" to="/pages/market">Go To Market</Link>
-                        </div>
-                    </div>
-                </div>
-            </Carousel.Item>
-            <Carousel.Item>
-                <div className="sliderImage" style={{backgroundImage: `url(${slider1})`}}>
-                    <div className="container d-flex align-items-center">
-                        <div className="sliderText">
-                            <h2>Lorem ipsum dolor <span className="text-yellow">sit amet</span>, consectetur adipisicing
-                                elit.</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, eius id molestiae
-                                nobis quas qui quis repellendus saepe unde vel. Eaque eveniet illum ipsam laboriosam
-                                reiciendis rerum soluta suscipit tempore.</p>
-                            <Link className="yellow-btn" to={props.btnSrc}>{props.btnPage}</Link>
-                        </div>
-                    </div>
-                </div>
-            </Carousel.Item>
+            {
+                    slider.map(slider => {
+                    return (
+                        <Carousel.Item key={slider.id}>
+                            <div className="sliderImage" style={{backgroundImage: `url(${sliderImage}`}}>
+                                <div className="container d-flex align-items-center">
+                                    <div className="sliderText">
+                                        <h2>{slider.sliderTitle}</h2>
+                                        <p>{slider.sliderText}</p>
+                                        <Link className="yellow-btn" to={props.btnSrc}>{props.btnPage}</Link>
+                                    </div>
+                                </div>
+                            </div>
+                        </Carousel.Item>
+                    )
+                })
+            }
         </Carousel>
     )
 }

@@ -5,6 +5,8 @@ import sitelogo from '../images/logo.png';
 
 export default function Navigation() {
     const pages = require('../data/data.json').pages
+    pages.sort((a, b) => a.position > b.position ? 1 : -1)
+
     return (
         <header>
             <Navbar variant="dark" expand="lg">
@@ -20,7 +22,6 @@ export default function Navigation() {
                         <Nav className="ms-auto">
                             {
                                 pages.map(page => {
-                                    pages.sort((a, b) => a.position > b.position ? 1 : -1)
                                     return <Link className="nav-link" key={page.id} to={page.url}>{page.name}</Link>
                                 })
                             }

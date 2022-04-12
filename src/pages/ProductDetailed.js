@@ -20,7 +20,7 @@ export default function ProductDetailed() {
                         <Row className="py-5">
                             <Col xs={12}>
                                 <Link className="text-decoration-none d-flex align-items-center" to="/pages/shop">
-                                    <span className="fs-1" style={{marginleft: "-14px"}}><MdKeyboardArrowLeft/></span>
+                                    <span className="fs-1" style={{marginLeft: -14}}><MdKeyboardArrowLeft/></span>
                                     <span className="pt-2">Back</span>
                                 </Link>
                             </Col>
@@ -33,7 +33,7 @@ export default function ProductDetailed() {
                                 <hr/>
                                 <div className="d-flex justify-content-between">
                                     <span className="pe-2">Price:</span>
-                                    <span className="text-white"> {product.price} BTC</span>
+                                    <span className="text-white">{product.price} BTC</span>
                                 </div>
                                 <hr/>
                                 <div>

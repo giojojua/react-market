@@ -13,7 +13,7 @@ export default function Product() {
             {
                 product.map(product => {
                     return (
-                        <Col xs={12} sm={6} md={6} lg={3} key={product.id}>
+                        <Col xs={12} sm={6} md={6} lg={3} key={product.id} className="category" data-item={product.category}>
                             <Link to="/pages/productdetailed"
                                   state={{ from: product.id }}
                                   className="text-decoration-none">

@@ -1,6 +1,7 @@
 import React from "react";
 import {Col, Container, Row} from "react-bootstrap";
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
+import {MdKeyboardArrowLeft} from "react-icons/md";
 
 export default function ProductDetailed() {
 
@@ -17,6 +18,12 @@ export default function ProductDetailed() {
                 return (
                     <Container key={product.id}>
                         <Row className="py-5">
+                            <Col xs={12}>
+                                <Link className="text-decoration-none d-flex align-items-center" to="/pages/shop">
+                                    <span className="fs-1" style={{marginleft: "-14px"}}><MdKeyboardArrowLeft/></span>
+                                    <span className="pt-2">Back</span>
+                                </Link>
+                            </Col>
                             <Col>
                                 <img src={product.image} alt=""/>
                             </Col>
@@ -57,7 +64,6 @@ export default function ProductDetailed() {
                                     </div>
                                 </div>
                                 <hr/>
-
                             </Col>
                         </Row>
                     </Container>

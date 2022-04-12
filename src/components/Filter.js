@@ -3,6 +3,28 @@ import {Col, Row} from "react-bootstrap";
 import {MdKeyboardArrowDown} from "react-icons/md";
 
 export default function Filter() {
+
+    const product = require('../data/data.json').product
+
+    product.sort((a, b) => a.position > b.position ? 1 : -1)
+
+    function DropdownToggle() {
+        if (document.getElementById('filter_dropdown').style.display === 'block') {
+            document.getElementById('filter_dropdown').style.display = 'none'
+        } else {
+            document.getElementById('filter_dropdown').style.display = 'block'
+        }
+    }
+
+    function categoryFilter() {
+        const itemBox = document.querySelectorAll('.category')
+
+
+        itemBox.forEach(item => {
+            item.style.display = "none"
+        })
+    }
+
     return (
         <Row>
             <Col>
@@ -10,17 +32,21 @@ export default function Filter() {
                     <div>
                         <h3 className="fw-bold mb-0">Shop</h3>
                     </div>
-                    <div className="d-flex align-items-center">
-                        <button id="current_category"> All Categories
+                    <div className="d-flex align-items-center position-relative">
+                        <button id="current_category" onClick={DropdownToggle}> All Categories
                             <MdKeyboardArrowDown/>
                         </button>
                         <ul id="filter_dropdown" style={{display: "none"}}>
-                            <li className="list" data-filter="All Categories">All Categories</li>
-                            <li className="list" data-filter="Cars For Sale">Cars For Sale</li>
-                            <li className="list" data-filter="Exclusive Spirits">Exclusive Spirits</li>
-                            <li className="list" data-filter="Fine Jewelry">Fine Jewelry</li>
-                            <li className="list" data-filter="Men's Watches">Men's Watches</li>
-                            <li className="list" data-filter="Ladies Watches">Ladies Watches</li>
+                            <li className="list" onClick={categoryFilter} data-filter={product.category}>All Categories</li>
+                            {
+                                product.map(product => {
+                                    return (
+                                        <li className="list" key={product.id} onClick={categoryFilter} data-filter={product.category}>
+                                            {product.category}
+                                        </li>
+                                    )
+                                })
+                            }
                         </ul>
                     </div>
                 </div>

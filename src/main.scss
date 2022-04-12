@@ -180,6 +180,26 @@ header {
   border-radius: 10px;
 }
 
+#filter_dropdown {
+  list-style: none;
+  background-color: #03091f;
+  border-radius: 8px;
+  min-width: 180px;
+  padding: 6px 0 6px 15px;
+  box-shadow: 0 0 20px 0 rgb(0 0 0 / 50%);
+  position: absolute;
+  top: 40px;
+  right: -20px;
+
+  .list {
+    cursor: pointer;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
 #current_category {
   color: #fff;
   background-color: transparent;

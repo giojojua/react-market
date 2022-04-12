@@ -153,6 +153,7 @@ header {
 .card {
   margin: auto;
   padding: 15px;
+  height: 100%;
 
   &:hover {
     border-radius: 10px;
@@ -168,6 +169,51 @@ header {
 .contact-text {
   list-style: none;
   padding: 0;
+}
+
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0B1126;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#current_category {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+}
+
+
+// blog box
+
+.box {
+  height: 100%;
+  border-radius: 10px;
+  background-color: #0B1126;
+
+  &:hover {
+    color: #000;
+    background-color: #f4d805;
+
+    h5, span {
+      color: #000 !important;
+    }
+  }
+
+  .boximage img {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 2px;
+  }
+
+  .boxtext {
+    padding: 15px 15px 20px 15px;
+  }
 }
 
 

@@ -8,7 +8,6 @@ export default function Slider(props) {
 
     function importAll(r) {
         return r.keys().map(r);
-
     }
 
     const sliderImage = importAll(require.context('../images/slider/', false, /\.(png|jpe?g|svg)$/));
@@ -18,7 +17,7 @@ export default function Slider(props) {
     return (
         <Carousel className="mb-4">
             {
-                    slider.map(slider => {
+                slider.map(slider => {
                     return (
                         <Carousel.Item key={slider.id}>
                             <div className="sliderImage" style={{backgroundImage: `url(${sliderImage}`}}>

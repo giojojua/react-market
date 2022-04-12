@@ -1,6 +1,8 @@
 import React from "react";
 import {Container} from "react-bootstrap";
 import Intro from "../components/Intro";
+import Filter from "../components/Filter";
+import Product from "./Product";
 
 export default function Shop() {
     return (
@@ -10,7 +12,8 @@ export default function Shop() {
                    currentPageName="Shop"
             />
             <Container>
-                <p>Shop Content</p>
+                <Filter/>
+                <Product/>
             </Container>
         </section>
     )

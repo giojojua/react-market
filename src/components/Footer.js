@@ -15,7 +15,7 @@ export default function Footer() {
                         <a className="text-decoration-none" href="/">
                             <div className="d-flex align-items-end pb-4">
                                 <img className="pe-2" src={sitelogo} alt=""/>
-                                <span className="brand-color">BikeWorld</span>
+                                <span className="brand-color">Bikeworld</span>
                             </div>
                         </a>
                         <p>Our Shop is growing and accessible to everyone. We are providing safest transactions with

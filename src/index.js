@@ -14,6 +14,7 @@ import Shop from "./pages/Shop";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import ScrollToTop from "./components/ScrollToTop";
+import ProductDetailed from "./pages/ProductDetailed";
 import Error from "./pages/Error";
 
 // Entry Point
@@ -26,6 +27,7 @@ ReactDOM.render(
                     <Route path="pages/shop" element={<Shop/>}/>
                     <Route path="pages/about" element={<About/>}/>
                     <Route path="pages/contact" element={<Contact/>}/>
+                    <Route path="pages/productdetailed" element={<ProductDetailed/>}/>
                     <Route path='*' exact={true} element={<Error/>} />
                 </Route>
         </Routes>

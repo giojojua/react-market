@@ -20,11 +20,10 @@ export default function Filter() {
         const itemBox = document.querySelectorAll('.category')
 
         itemBox.forEach(item => {
-            if (event.target.getAttribute('data-category-title') === item.getAttribute('data-item')) {
-
-                item.style.display = "none"
-            } else {
+            if (event.target.getAttribute('data-category-title') === item.getAttribute('data-item') || event.target.getAttribute('data-category-title') === "all") {
                 item.style.display = "flex"
+            } else {
+                item.style.display = "none"
             }
         })
     }
@@ -42,11 +41,12 @@ export default function Filter() {
                             <MdKeyboardArrowDown/>
                         </button>
                         <ul id="filter_dropdown" style={{display: "none"}}>
-                            <li className="list" onClick={categoryFilter}>All Categories</li>
+                            <li className="list" data-category-title="all" onClick={categoryFilter}>All Categories</li>
                             {
                                 product.map(product => {
                                     return (
-                                        <li className="list" key={product.id} data-category-title={product.category} onClick={categoryFilter}>
+                                        <li className="list" key={product.id} data-category-title={product.category}
+                                            onClick={categoryFilter}>
                                             {product.category}
                                         </li>
                                     )

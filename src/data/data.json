@@ -35,6 +35,30 @@
       "position": 1
     }
   ],
+  "services": [
+    {
+      "id": 1,
+      "image": "MdSupportAgent",
+      "title": "24/7 Support",
+      "text": "We will help you anytime, anywhere.",
+      "position": 2
+    },
+    {
+      "id": 2,
+      "image": "MdShoppingCart",
+      "title": "24/7 Shop",
+      "text": "Our Shop is always open for you.",
+      "position": 2
+    },
+    {
+      "id": 3,
+      "image": "MdDeliveryDining",
+      "title": "24/7 Service",
+      "text": "Our Service is always open.",
+      "position": 3
+    }
+
+  ],
   "product": [
     {
       "id": 1,

@@ -3,6 +3,7 @@ import {Col, Row, Container} from "react-bootstrap"
 import sitelogo from '../images/logo.png';
 import ScrollButton from "./ScrollButton";
 import ContactText from "./ContactText";
+import {Link} from "react-router-dom";
 
 export default function Footer() {
     const pages = require('../data/data.json').pages
@@ -12,12 +13,12 @@ export default function Footer() {
             <Container>
                 <Row className="py-5">
                     <Col className="pe-4" xs={6}>
-                        <a className="text-decoration-none" href="/">
+                        <Link className="text-decoration-none" to="/">
                             <div className="d-flex align-items-end pb-4">
                                 <img className="pe-2" src={sitelogo} alt=""/>
                                 <span className="brand-color">Bikeworld</span>
                             </div>
-                        </a>
+                        </Link>
                         <p>Our Shop is growing and accessible to everyone. We are providing safest transactions with
                             BitCoin and on every transactaction you can be relaxed.</p>
                     </Col>

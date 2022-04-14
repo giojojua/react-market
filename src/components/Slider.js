@@ -10,7 +10,7 @@ export default function Slider(props) {
         return r.keys().map(r);
     }
 
-    const sliderImage = importAll(require.context('../images/slider/', false, /\.(png|jpe?g|svg)$/));
+    const sliderImage = importAll(require.context('../images/slider/', false, /.(png|jpe?g|svg)$/));
 
     slider.sort((a, b) => a.position > b.position ? 1 : -1)
 
@@ -20,7 +20,7 @@ export default function Slider(props) {
                 slider.map(slider => {
                     return (
                         <Carousel.Item key={slider.id}>
-                            <div className="sliderImage" style={{backgroundImage: `url(${sliderImage}`}}>
+                            <div className="sliderImage" style={{backgroundImage: `url(${sliderImage[slider.id - 1]})`}}>
                                 <div className="container d-flex align-items-center">
                                     <div className="sliderText">
                                         <h2>{slider.sliderTitle}</h2>

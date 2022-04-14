@@ -22,7 +22,7 @@
   "slider": [
     {
       "id": 1,
-      "sliderImage": "../images/slider1.jpg",
+      "sliderImage": "../images/slider1.jpeg",
       "sliderTitle": "Buy with Bitcoins on our Shop",
       "sliderText": "We are providing safest transactions with BitCoin",
       "position": 2

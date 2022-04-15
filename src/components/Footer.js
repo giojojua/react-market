@@ -1,6 +1,5 @@
 import React from "react";
 import {Col, Row, Container} from "react-bootstrap"
-import sitelogo from '../images/logo.png';
 import ScrollButton from "./ScrollButton";
 import ContactText from "./ContactText";
 import {Link} from "react-router-dom";
@@ -15,7 +14,7 @@ export default function Footer() {
                     <Col className="pe-4" xs={6}>
                         <Link className="text-decoration-none" to="/">
                             <div className="d-flex align-items-end pb-4">
-                                <img className="pe-2" src={sitelogo} alt=""/>
+                                <img className="pe-2" src="/images/logo.png" alt=""/>
                                 <span className="brand-color">Bikeworld</span>
                             </div>
                         </Link>

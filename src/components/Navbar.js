@@ -1,7 +1,6 @@
 import React from "react";
 import {Container, Nav, Navbar} from "react-bootstrap"
 import {Link} from "react-router-dom"
-import sitelogo from '../images/logo.png';
 
 export default function Navigation() {
     const pages = require('../data/data.json').pages
@@ -13,7 +12,7 @@ export default function Navigation() {
                 <Container>
                     <Navbar.Brand>
                         <Link className="d-flex align-items-end text-decoration-none" to="/">
-                            <img className="pe-2" src={sitelogo} alt=""/>
+                            <img className="pe-2" src="/images/logo.png" alt=""/>
                             <span className="brand-color">Bikeworld</span>
                         </Link>
                     </Navbar.Brand>

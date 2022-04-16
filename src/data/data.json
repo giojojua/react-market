@@ -22,14 +22,14 @@
   "slider": [
     {
       "id": 1,
-      "sliderImage": "/images/slider/slider1.jpeg",
+      "sliderImage": "/images/slider/slider2.jpg",
       "sliderTitle": "Buy with Bitcoins on our Shop",
       "sliderText": "We are providing safest transactions with BitCoin",
       "position": 2
     },
     {
       "id": 2,
-      "sliderImage": "/images/slider/slider2.jpg",
+      "sliderImage": "/images/slider/slider1.jpeg",
       "sliderTitle": "Our Shop is growing and accessible to everyone",
       "sliderText": "You can buy any item you want with us",
       "position": 1

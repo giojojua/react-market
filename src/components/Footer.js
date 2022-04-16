@@ -39,8 +39,8 @@ export default function Footer() {
                 </Row>
                 <Row className="copyright">
                     <Col>
-                        <p className="text-center">© Copyright 2022 <a href="/"
-                                                                       className="text-white text-decoration-none">Shop</a> All
+                        <p className="text-center">© Copyright 2022 <Link to="/"
+                                                                       className="text-white text-decoration-none">Shop</Link> All
                             Rights Reserved.</p>
                     </Col>
                 </Row>

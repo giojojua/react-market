@@ -7,7 +7,7 @@ import ContactText from "../components/ContactText";
 export default function Contact() {
     return (
         <section>
-            <Intro introImage="https://i.pinimg.com/736x/97/5f/95/975f95721627da1d9eb55bcf2f5e1e17.jpg"
+            <Intro introImage="/images/shop.jpg"
                    currentPage="/pages/contact"
                    currentPageName="Contact"
             />

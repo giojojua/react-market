@@ -223,12 +223,32 @@ header {
     }
   }
 
-  .boximage img {
-    display: block;
-    width: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding: 2px;
+  .boximage {
+    position: relative;
+
+    .category-baner {
+      width: fit-content;
+      position: absolute;
+      top: 20px;
+      right: 2px;
+      padding: 3px 10px 2px 10px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      color: #fff;
+      background-color: #6164fe;
+      font-family: "Inter", sans-serif;
+      font-weight: bold;
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 2px;
+    }
   }
 
   .boxtext {

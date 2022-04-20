@@ -1,12 +1,16 @@
 import React from "react";
 import {Col, Row} from "react-bootstrap";
 import {MdKeyboardArrowDown} from "react-icons/md";
+import useFetch from "../hooks/useFetch";
 
 export default function Filter() {
 
-    const product = require('../data/data.json').product
+    const { loading, error, data } = useFetch('http://localhost:1337/api/products?populate=%2A')
 
-    product.sort((a, b) => a.position > b.position ? 1 : -1)
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Error...</p>
+
+    // product.sort((a, b) => a.position > b.position ? 1 : -1)
 
     function DropdownToggle() {
         if (document.getElementById('filter_dropdown').style.display === 'block') {
@@ -43,11 +47,14 @@ export default function Filter() {
                         <ul id="filter_dropdown" style={{display: "none"}}>
                             <li className="list" data-category-title="all" onClick={categoryFilter}>All Categories</li>
                             {
-                                product.map(product => {
+                                data.data.map(product => {
+                                    let attribute = product.attributes
+                                    let category = attribute.product_category.data.attributes.name
+
                                     return (
-                                        <li className="list" key={product.id} data-category-title={product.category}
+                                        <li className="list" key={product.id} data-category-title={category}
                                             onClick={categoryFilter}>
-                                            {product.category}
+                                            {category}
                                         </li>
                                     )
                                 })

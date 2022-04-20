@@ -10,8 +10,7 @@ export default function Product() {
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error...</p>
 
-    // product.sort((a, b) => a.position > b.position ? 1 : -1)
-
+    data.data.sort((a, b) => a.attributes.position > b.attributes.position ? -1 : 1)
 
     return (
         <Row className="py-5">

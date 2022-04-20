@@ -69,6 +69,21 @@ body {
 }
 
 
+// Loading
+
+.loading, .error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+}
+
+.loading img {
+  display: block;
+  height: 50px;
+}
+
+
 // header & navba styles
 
 header {
@@ -253,6 +268,10 @@ header {
 
   .boxtext {
     padding: 15px 15px 20px 15px;
+
+    h5 {
+      height: 48px;
+    }
   }
 }
 

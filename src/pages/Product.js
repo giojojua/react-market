@@ -23,8 +23,7 @@ export default function Product() {
 
                     return (
                         <Col xs={12} sm={6} md={6} lg={3} key={product.id} className="category" data-item={category}>
-                            <Link to="/pages/productdetailed"
-                                  state={{from: product.id}}
+                            <Link to={"/pages/productdetailed/" + product.id}
                                   className="text-decoration-none">
                                 <div className="box">
                                     <div className="boximage">

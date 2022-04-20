@@ -27,7 +27,7 @@ ReactDOM.render(
                     <Route path="pages/shop" element={<Shop/>}/>
                     <Route path="pages/about" element={<About/>}/>
                     <Route path="pages/contact" element={<Contact/>}/>
-                    <Route path="pages/productdetailed" element={<ProductDetailed/>}/>
+                    <Route path={"pages/productdetailed/:id"} element={<ProductDetailed/>}/>
                     <Route path='*' exact={true} element={<Error/>} />
                 </Route>
         </Routes>

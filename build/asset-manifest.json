@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0f9e234d.css",
+    "main.js": "/static/js/main.4aca2754.js",
+    "static/media/inter-all-400-normal.woff": "/static/media/inter-all-400-normal.e71ac35377dd87cb4d4b.woff",
+    "static/media/open-sans-all-400-normal.woff": "/static/media/open-sans-all-400-normal.fd1a30188fbba33c1971.woff",
+    "static/media/inter-latin-ext-400-normal.woff2": "/static/media/inter-latin-ext-400-normal.325ea6d33179f07ec7db.woff2",
+    "static/media/open-sans-cyrillic-ext-400-normal.woff2": "/static/media/open-sans-cyrillic-ext-400-normal.432abaf385d938750963.woff2",
+    "static/media/open-sans-latin-400-normal.woff2": "/static/media/open-sans-latin-400-normal.a2d02404d087c7c068d4.woff2",
+    "static/media/inter-latin-400-normal.woff2": "/static/media/inter-latin-400-normal.c96fe5ff771f9e7b53ab.woff2",
+    "static/media/open-sans-latin-ext-400-normal.woff2": "/static/media/open-sans-latin-ext-400-normal.0950a0dbc206706736db.woff2",
+    "static/media/open-sans-cyrillic-400-normal.woff2": "/static/media/open-sans-cyrillic-400-normal.8c8b009e2308cfd36674.woff2",
+    "static/media/inter-cyrillic-ext-400-normal.woff2": "/static/media/inter-cyrillic-ext-400-normal.4543e27a05aa2ba75c44.woff2",
+    "static/media/open-sans-greek-400-normal.woff2": "/static/media/open-sans-greek-400-normal.f4df5aa87d97ffdd65c4.woff2",
+    "static/media/inter-greek-400-normal.woff2": "/static/media/inter-greek-400-normal.94fd6d5b2b3cd70f2516.woff2",
+    "static/media/open-sans-hebrew-400-normal.woff2": "/static/media/open-sans-hebrew-400-normal.abf447351bfd65fe2d5d.woff2",
+    "static/media/open-sans-vietnamese-400-normal.woff2": "/static/media/open-sans-vietnamese-400-normal.1970138327ca2599f2c5.woff2",
+    "static/media/inter-cyrillic-400-normal.woff2": "/static/media/inter-cyrillic-400-normal.514f4123b1effd5ed0d8.woff2",
+    "static/media/inter-greek-ext-400-normal.woff2": "/static/media/inter-greek-ext-400-normal.18e3b17c2aceabafdd3c.woff2",
+    "static/media/open-sans-greek-ext-400-normal.woff2": "/static/media/open-sans-greek-ext-400-normal.7f0c7c378a3ca829b189.woff2",
+    "static/media/inter-vietnamese-400-normal.woff2": "/static/media/inter-vietnamese-400-normal.a1bc9a8f426924c5dea8.woff2",
+    "index.html": "/index.html",
+    "main.0f9e234d.css.map": "/static/css/main.0f9e234d.css.map",
+    "main.4aca2754.js.map": "/static/js/main.4aca2754.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f9e234d.css",
+    "static/js/main.4aca2754.js"
+  ]
+}

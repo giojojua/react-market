@@ -10,8 +10,6 @@ export default function Filter() {
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error...</p>
 
-    // product.sort((a, b) => a.position > b.position ? 1 : -1)
-
     function DropdownToggle() {
         if (document.getElementById('filter_dropdown').style.display === 'block') {
             document.getElementById('filter_dropdown').style.display = 'none'

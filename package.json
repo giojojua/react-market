@@ -21,10 +21,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "surge --project ./build --token 0882c8aff0699e84d693bd77d2e5c464 --domain bikeworld.surge.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "watch": "sass -w ./src/main.scss ./src/App.css",
-    "deploy": "surge --project ./public --token 0882c8aff0699e84d693bd77d2e5c464 --domain bikeworld.surge.sh"
+    "watch": "sass -w ./src/main.scss ./src/App.css"
   },
   "eslintConfig": {
     "extends": [

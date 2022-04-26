@@ -1,10 +1,17 @@
 import React from "react";
 import {Container, Nav, Navbar} from "react-bootstrap"
 import {Link} from "react-router-dom"
+import useFetch from "../hooks/useFetch";
 
 export default function Navigation() {
-    const pages = require('../data/data.json').pages
-    pages.sort((a, b) => a.position > b.position ? 1 : -1)
+    const {loading, error, data} = useFetch('http://localhost:1337/api/pages')
+
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Error...</p>
+
+
+    data.data.sort((a, b) => a.attributes.position > b.attributes.position ? -1 : 1)
+
 
     return (
         <header>
@@ -20,8 +27,9 @@ export default function Navigation() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="ms-auto">
                             {
-                                pages.map(page => {
-                                    return <Link className="nav-link" key={page.id} to={page.url}>{page.name}</Link>
+                                data.data.map(page => {
+                                    let attribute = page.attributes
+                                    return <Link className="nav-link" key={page.id} to={"/pages/" + attribute.slug}>{attribute.title}</Link>
                                 })
                             }
                         </Nav>

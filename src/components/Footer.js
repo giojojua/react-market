@@ -3,9 +3,15 @@ import {Col, Row, Container} from "react-bootstrap"
 import ScrollButton from "./ScrollButton";
 import ContactText from "./ContactText";
 import {Link} from "react-router-dom";
+import useFetch from "../hooks/useFetch";
 
 export default function Footer() {
-    const pages = require('../data/data.json').pages
+    const {loading, error, data} = useFetch('http://localhost:1337/api/pages')
+
+    if (loading) return <p>Loading...</p>
+    if (error) return <p>Error...</p>
+
+    data.data.sort((a, b) => a.attributes.position > b.attributes.position ? -1 : 1)
 
     return (
         <footer className="mt-5">
@@ -25,9 +31,9 @@ export default function Footer() {
                         <h5>Navigation</h5>
                         <ul>
                             {
-                                pages.map(page => {
-                                        pages.sort((a, b) => a.position > b.position ? 1 : -1)
-                                        return (<li key={page.id}><a href={page.url}>{page.name}</a></li>)
+                                data.data.map(page => {
+                                    let attribute = page.attributes
+                                        return (<li key={page.id}><Link to={"/pages/" + attribute.slug}>{attribute.title}</Link></li>)
                                     }
                                 )
                             }
@@ -40,7 +46,7 @@ export default function Footer() {
                 <Row className="copyright">
                     <Col>
                         <p className="text-center">© Copyright 2022 <Link to="/"
-                                                                       className="text-white text-decoration-none">Shop</Link> All
+                                                                       className="text-white text-decoration-none">Bikeworld</Link> All
                             Rights Reserved.</p>
                     </Col>
                 </Row>

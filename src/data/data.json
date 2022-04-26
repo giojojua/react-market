@@ -1,24 +1,4 @@
 {
-  "pages": [
-    {
-      "id": 1,
-      "name": "Our Shop",
-      "url": "/pages/shop",
-      "position": 1
-    },
-    {
-      "id": 2,
-      "name": "About Us",
-      "url": "/pages/about",
-      "position": 2
-    },
-    {
-      "id": 3,
-      "name": "Contact",
-      "url": "/pages/contact",
-      "position": 3
-    }
-  ],
   "slider": [
     {
       "id": 1,

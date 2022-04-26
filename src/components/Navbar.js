@@ -4,7 +4,8 @@ import {Link} from "react-router-dom"
 import useFetch from "../hooks/useFetch";
 
 export default function Navigation() {
-    const {loading, error, data} = useFetch('http://localhost:1337/api/pages')
+
+    const {loading, error, data} = useFetch('http://localhost:1337/api/pages?populate=%2A')
 
     if (loading) return <p>Loading...</p>
     if (error) return <p>Error...</p>

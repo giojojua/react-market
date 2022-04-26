@@ -37,32 +37,5 @@
       "text": "Our Service is always open.",
       "position": 3
     }
-
-  ],
-  "product": [
-    {
-      "id": 1,
-      "position": 1,
-      "image": "https://i.pinimg.com/736x/97/5f/95/975f95721627da1d9eb55bcf2f5e1e17.jpg",
-      "title": "Kawasaki Ninja",
-      "model": "ZX-6R",
-      "price": 0.1,
-      "year": 2006,
-      "category": "Sport",
-      "engine": "636",
-      "transmission": "Mechanic"
-    },
-    {
-      "id": 2,
-      "position": 2,
-      "image": "https://i.pinimg.com/736x/97/5f/95/975f95721627da1d9eb55bcf2f5e1e17.jpg",
-      "title": "KTM",
-      "model": "Duke 1000",
-      "price": 0.12,
-      "year": 2008,
-      "category": "Street",
-      "engine": "1000",
-      "transmission": "Mechanic"
-    }
   ]
 }

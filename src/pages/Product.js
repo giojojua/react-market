@@ -7,7 +7,14 @@ export default function Product() {
 
     const {loading, error, data} = useFetch('http://localhost:1337/api/products?populate=%2A')
 
-    if (loading) return <p>Loading...</p>
+    if (loading) return (
+        <Row>
+            <Col>
+                Loading
+            </Col>
+        </Row>
+    )
+
     if (error) return <p>Error...</p>
 
     data.data.sort((a, b) => a.attributes.position > b.attributes.position ? -1 : 1)

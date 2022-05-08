@@ -7,8 +7,17 @@ export default function Navigation() {
 
     const {loading, error, data} = useFetch('http://localhost:1337/api/pages?populate=%2A')
 
-    if (loading) return <p>Loading...</p>
-    if (error) return <p>Error...</p>
+    if (loading) return (
+        <div className="loading">
+            <img src="/images/loading.gif" alt=""/>
+        </div>
+    )
+
+    if (error) return (
+        <div className="error">
+            <img src="/images/loading.gif" alt=""/>
+        </div>
+    )
 
 
     data.data.sort((a, b) => a.attributes.position > b.attributes.position ? -1 : 1)

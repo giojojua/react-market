@@ -24,7 +24,7 @@ export default function ProductDetailed() {
 
     if (data.data) {
         let attribute = data.data.attributes
-        let image = attribute.image.data.attributes.url
+        let image = "http://localhost:1337" +  attribute.image.data.attributes.url
         let category = attribute.product_category.data.attributes.name
 
         return (
@@ -37,7 +37,7 @@ export default function ProductDetailed() {
                         </Link>
                     </Col>
                     <Col>
-                        <img src={"http://localhost:1337" + image} alt=""/>
+                        <img src={image} alt=""/>
                     </Col>
                     <Col>
                         <h3 className="fw-bold">{attribute.title}</h3>

@@ -8,14 +8,16 @@ export default function Product() {
     const {loading, error, data} = useFetch('http://localhost:1337/api/products?populate=%2A')
 
     if (loading) return (
-        <Row>
-            <Col>
-                Loading...
-            </Col>
-        </Row>
+        <div className="loading">
+            <img src="/images/loading.gif" alt=""/>
+        </div>
     )
 
-    if (error) return <p>Error...</p>
+    if (error) return (
+        <div className="error">
+            <img src="/images/loading.gif" alt=""/>
+        </div>
+    )
 
     data.data.sort((a, b) => a.attributes.position > b.attributes.position ? -1 : 1)
 
@@ -24,7 +26,7 @@ export default function Product() {
             {
                 data.data.map(product => {
                     let attribute = product.attributes
-                    let image = attribute.image.data.attributes.url
+                    let image = "http://localhost:1337" +  attribute.image.data.attributes.url
                     let category = attribute.product_category.data.attributes.name
 
                     return (
@@ -36,7 +38,7 @@ export default function Product() {
                                         <div className="category-baner">
                                             {category}
                                         </div>
-                                        <img src={"http://localhost:1337" + image} alt=""/>
+                                        <img src={image} alt=""/>
                                     </div>
                                     <div className="boxtext">
                                         <h5>{attribute.title} {attribute.model}</h5>

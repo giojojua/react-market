@@ -78,7 +78,7 @@ body {
   height: calc(100vh - 100px);
 }
 
-.loading img {
+.loading img, .error img {
   display: block;
   height: 50px;
 }
